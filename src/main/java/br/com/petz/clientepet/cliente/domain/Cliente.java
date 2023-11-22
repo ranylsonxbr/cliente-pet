@@ -1,6 +1,7 @@
 package br.com.petz.clientepet.cliente.domain;
 
 
+import br.com.petz.clientepet.cliente.application.ClienteRequest;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -41,15 +42,5 @@ public class Cliente {
     private LocalDateTime dataHoraDoCadastro;
     private LocalDateTime dataHoraDaUltimaAlteracao;
 
-    public Cliente(ClienteRequest clienteRequest) {
-        this.nomeCompleto = clienteRequest.getNomeCompleto();
-        this.email = clienteRequest.getEmail();
-        this.celular = clienteRequest.getCelular();
-        this.telefone = clienteRequest.getTelefone();
-        this.sexo = clienteRequest.getSexo();
-        this.dataNascimento = clienteRequest.getDataNascimento();
-        this.cpf = clienteRequest.getCpf();
-        this.aceitaTermos = clienteRequest.getAceitaTermos();
-        this.dataHoraDoCadastro = LocalDateTime.now();
-    }
+    
 }
