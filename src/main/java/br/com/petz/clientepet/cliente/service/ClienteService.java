@@ -5,5 +5,5 @@ import br.com.petz.clientepet.cliente.application.ClienteResponse;
 
 public interface ClienteService {
 
-    ClienteResponse criacliente(ClienteRequest clienteRequest);
+    ClienteResponse criaCliente(ClienteRequest clienteRequest);
 }
