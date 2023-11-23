@@ -1,9 +1,11 @@
-package br.com.petz.clientepet.cliente.application;
+package br.com.petz.clientepet.cliente.application.api;
 
 import br.com.petz.clientepet.cliente.service.ClienteService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 @RestController
 @Log4j2
@@ -19,5 +21,10 @@ public class ClienteController implements ClienteAPI {
         log.info("[finaliza] ClienteController - postCliente");
 
         return clienteCriado;
+    }
+
+    @Override
+    public List<ClienteListResponse> getTodosClientes() {
+        return null;
     }
 }

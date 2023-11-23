@@ -1,7 +1,7 @@
 package br.com.petz.clientepet.cliente.domain;
 
 
-import br.com.petz.clientepet.cliente.application.ClienteRequest;
+import br.com.petz.clientepet.cliente.application.api.ClienteRequest;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -53,5 +53,6 @@ public class Cliente {
         this.aceitaTermos = clienteRequest.getAceitaTermos();
         this.dataHoraDoCadastro = LocalDateTime.now();
     }
+
 
 }

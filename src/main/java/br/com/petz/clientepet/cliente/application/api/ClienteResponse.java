@@ -1,4 +1,4 @@
-package br.com.petz.clientepet.cliente.application;
+package br.com.petz.clientepet.cliente.application.api;
 
 import lombok.Builder;
 import lombok.Value;
