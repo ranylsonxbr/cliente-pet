@@ -2,20 +2,22 @@ package br.com.petz.clientepet.cliente.application.api;
 
 import br.com.petz.clientepet.cliente.domain.Cliente;
 import br.com.petz.clientepet.cliente.domain.Sexo;
+import lombok.Value;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.UUID;
 
+@Value
 public class ClienteDetalhadoResponse {
-    private UUID idCliente;
-    private String nomeCompleto;
-    private String cpf;
-    private String email;
-    private String celular;
-    private String telefone;
-    private Sexo sexo;
-    private Boolean aceitaTermos;
-    private LocalDate dataHoraDoCadastro;
+     UUID idCliente;
+     String nomeCompleto;
+     String cpf;
+     String email;
+     String celular;
+     String telefone;
+     Sexo sexo;
+     Boolean aceitaTermos;
+     LocalDateTime dataHoraDoCadastro;
 
 
     public ClienteDetalhadoResponse(Cliente cliente) {
@@ -27,6 +29,6 @@ public class ClienteDetalhadoResponse {
         this.telefone = cliente.getTelefone();
         this.sexo = cliente.getSexo();
         this.aceitaTermos = cliente.getAceitaTermos();
-        this.dataHoraDoCadastro = cliente.getDataNascimento();
+        this.dataHoraDoCadastro = cliente.getDataHoraDoCadastro();
     }
 }
