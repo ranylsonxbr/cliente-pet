@@ -11,8 +11,6 @@ import java.util.UUID;
 public interface ClienteService {
 
     ClienteResponse criaCliente(ClienteRequest clienteRequest);
-
     List<ClienteListResponse> buscaTodosClientes();
-
-    ClienteDetalhadoResponse buscaClientesPorId(UUID idCliente);
+    ClienteDetalhadoResponse buscaClienteAtravesId(UUID idCliente);
 }

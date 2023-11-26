@@ -53,6 +53,4 @@ public class Cliente {
         this.aceitaTermos = clienteRequest.getAceitaTermos();
         this.dataHoraDoCadastro = LocalDateTime.now();
     }
-
-
 }
