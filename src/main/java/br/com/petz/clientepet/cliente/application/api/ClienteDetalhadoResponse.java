@@ -9,15 +9,15 @@ import java.util.UUID;
 
 @Value
 public class ClienteDetalhadoResponse {
-     UUID idCliente;
-     String nomeCompleto;
-     String cpf;
-     String email;
-     String celular;
-     String telefone;
-     Sexo sexo;
-     Boolean aceitaTermos;
-     LocalDateTime dataHoraDoCadastro;
+    UUID idCliente;
+    String nomeCompleto;
+    String cpf;
+    String email;
+    String celular;
+    String telefone;
+    Sexo sexo;
+    Boolean aceitaTermos;
+    LocalDateTime dataHoraDoCadastro;
 
 
     public ClienteDetalhadoResponse(Cliente cliente) {
