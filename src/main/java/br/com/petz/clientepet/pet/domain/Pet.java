@@ -1,5 +1,6 @@
 package br.com.petz.clientepet.pet.domain;
 
+import br.com.petz.clientepet.pet.application.api.PetAlteracaoRequest;
 import br.com.petz.clientepet.pet.application.api.PetRequest;
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -59,4 +60,17 @@ public class Pet {
 
         }
 
+    public void altera(PetAlteracaoRequest petAlteracaoRequest) {
+            this.nomePet = petAlteracaoRequest.getNomePet();
+            this.porte = petAlteracaoRequest.getPorte();
+            this.tipoPet = petAlteracaoRequest.getTipoPet();
+            this.microchip = petAlteracaoRequest.getMicrochip();
+            this.raca = petAlteracaoRequest.getRaca();
+            this.sexoPet = petAlteracaoRequest.getSexoPet();
+            this.pelagemCor = petAlteracaoRequest.getPelagemCor();
+            this.dataNascimento = petAlteracaoRequest.getDataNascimento();
+            this.rga = petAlteracaoRequest.getRga();
+            this.peso = petAlteracaoRequest.getPeso();
+            this.dataHoraDaUltimaAlteracao = LocalDateTime.now();
+    }
 }
